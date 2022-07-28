@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Arimo';
+	src: url('Arimo-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	background-color: #444400;
+	color: white;
+
+	font-family: 'Arimo';
+	font-size: 24pt;
+	text-align: center;
+}
+
+.the-mese-block {
+	text-align: center;
+	margin-top: 40px;
+}
+
+h3 {
+	margin-top: 70px;
+	animation-duration: 0.5s;
+	animation-name: text;
+	animation-iteration-count: infinite;
+}
+
+@keyframes text {
+	0%	{ transform: rotate(-2deg); }
+	50%	{ transform: rotate(2deg); }
+	100%{ transform: rotate(-2deg); }
+}
