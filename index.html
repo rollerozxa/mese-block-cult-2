@@ -8,8 +8,27 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<img class="the-mese-block" src="mese_block.png">
+		<div class="cult-container">
+			<img class="the-mese-block mese1" src="mese_block.png">
+			<img class="the-mese-block mese2" src="mese_block.png">
+			<img class="the-mese-block mese3" src="mese_block.png">
 
-		<h3>PRAISE THE MESE BLOCK</h3>
+			<h3>PRAISE THE MESE BLOCK</h3>
+			
+			<a href="#" onclick="playAudio()" id="audioBtn">[ play audio ]</a>
+			
+			<audio autoplay loop id="audio">
+				<source src="credits_music.ogg" type="audio/ogg">
+			</audio> 
+		</div>
+
+		<footer>
+			<a href="https://voxelmanip.se"><img src="poweredbyvoxelmanip.png"></a>
+		</footer>
+		<script>
+function playAudio() {
+	document.getElementById("audio").play();
+	document.getElementById("audioBtn").style.display = 'none';
+}		</script>
 	</body>
 </html>
